@@ -13,7 +13,7 @@ RUN conda config --set show_channel_urls true && \
     conda config --prepend channels plotly && \
     conda config --prepend channels conda-forge && \
     conda update --yes -n base conda && \
-    conda install --update-all --force-reinstall --yes jupyterlab osmnx pyproj=1.9.6 python-igraph pandana geoalchemy2 psycopg2 xlrd xlsxwriter seaborn plotly_express sphinx sphinx_rtd_theme jupytext && \
+    conda install --update-all --force-reinstall --yes jupyterlab osmnx pyproj=1.9.6 python-igraph pandana geoalchemy2 psycopg2 xlrd xlsxwriter seaborn plotly_express jupytext && \
     python -m ipykernel install --name alta --display-name "Python (alta)" && \
     conda clean --all --yes && \
     conda info --all && \
